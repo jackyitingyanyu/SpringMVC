@@ -43,6 +43,7 @@ public class DemoController {
 		System.out.println(path);
 		File file = new File(path,fileName);
 		//文件直接转成字节数组
+		//测试行
 		byte[] bytes = FileUtils.readFileToByteArray(file);
 		os.write(bytes);
 		os.flush();
