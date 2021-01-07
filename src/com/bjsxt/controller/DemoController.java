@@ -29,7 +29,7 @@ public class DemoController {
 	@RequestMapping("upload")
 	public String upload(MultipartFile file,String name,HttpSession session) throws IOException {
 		System.out.println("name:"+name);
-		//获取到文件名和输入流
+		//获取到文件名和输入流流流流
 		String fileName = file.getOriginalFilename();
 		String suffix=fileName.substring(fileName.lastIndexOf("."));
 		if(suffix.equalsIgnoreCase(".png")) {
